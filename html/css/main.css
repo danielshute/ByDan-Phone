@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: hidden;
+    user-select: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    background-color: #10192E;
+}
+
+.main {
+    position: fixed;
+    bottom: 0;
+    right: 1%;
+    width: 20rem;
+    height: 35rem;
+}
+
+.main > .frame {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    pointer-events: none;
+}
+
+.main > .screen {
+    position: absolute;
+    top: 4%; 
+    left: 9%; 
+
+    width: 82%;
+    height: 92%;
+    background: url(../media/bg.png);
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    border-radius: 2vw;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.info-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 11px;
+    padding: 0.4rem 1.4rem 0.1rem 1.4rem;
+    background: #0000004f;
+    font-weight: 500;
+    color: white;
+    width: 100%;
+}
+
+.info-bar-container {
+    position: absolute;
+    width: 82%;
+    z-index: 10 !important;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.lockscreen .dandt {
+    margin-top: 4rem;
+    text-align: center;
+    color: white;
+}
+
+
+.lockscreen .time {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 4rem;
+}
+
+.lockscreen .date {
+    font-size: 0.8rem;
+    font-weight: 200;
+}
+
+.open-container {
+    position: absolute;
+    left: 50%;
+    right: 0;
+    bottom: 0;
+    margin-left: -50px;
+    padding: 0.5rem;
+    z-index: 10 !important;
+}
+
+.open {
+    width: 6rem;
+    background-color: white;
+    border: none;
+    border-radius: 2px;
+    height: 0.25rem;
+    cursor: pointer;
+}
+
+.homescreen {
+    padding: 1rem;
+    padding-top: 2rem;
+}
+
+.apps-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.app {
+    width: 3rem;
+    height: 3rem;
+    background-color: rgb(29, 29, 29);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.app:hover {
+    transform: scale(1.05);
+}
+
+.app i {
+    color: white;
+    font-size: 1.3rem;
+}
+
+.green-app {
+    background: rgb(103,255,64);
+    background: linear-gradient(142deg, rgba(103,255,64,1) 0%, rgba(76,255,44,1) 35%, rgba(0,225,67,1) 100%);
+}
+
+.blue-app {
+    background: rgb(44,105,255);
+    background: linear-gradient(142deg, rgba(44,105,255,1) 35%, rgba(45,0,225,1) 100%);
+}
+
+.orange-app {
+    background: rgb(255,192,0);
+    background: linear-gradient(142deg, rgba(255,192,0,1) 35%, rgba(255,123,0,1) 100%);
+}
+
+.contacts {
+    background-color: #10192E;
+    height: 31rem;
+    padding: 1.5rem;
+    padding-top: 2.1rem;
+}
+
+.contacts h1 {
+    font-size: 1.3rem;
+    color: white;
+    text-align: center;
+    font-weight: 400;
+}
+
+.contacts .search {
+    display: flex;
+    justify-content: center;
+}
+
+.contacts .search input {
+    margin-top: 10px;
+    width: 100%;
+    padding: 0.6rem;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    background-color: #334860;
+    color: white;
+}
+
+.contacts .search .contacts-search::placeholder {
+    color: #5D6B7A;
+}
+
+.contact-list{
+    display: flex;
+    align-items: center;
+}
+
+.contacts .contact-container {
+    width: 100%;
+    margin-top: 10px;
+    background-color: #080F27;
+    border-radius: 6px;
+}
+
+.contacts .contact-container .contact {
+    background-color: #1F2D41;
+    padding: 0.6rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.contacts .contact-container .contact .contact-name {
+    font-size: 0.85rem;
+    color: white;
+    font-weight: 600;
+}
+
+.contacts .contact-container .contact .contact-number {
+    font-size: 0.6rem;
+    color: #334860;
+    font-weight: 800;
+}
+
+.contacts .contact-container .contact-options {
+    padding: 8px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contacts .contact-container .contact-options i {
+    color: #334860;
+    font-size: 1.1rem;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.contacts .contact-container .contact-options i:hover {
+    color: #405a77;
+}
+
+.closed {
+    display: none;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MRP-Phone</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+    <div class="main" id="main">
+        <img class="frame" src="media/frame.png">
+        <div class="screen">
+            <div class="info-bar-container">
+                <div class="info-bar">
+                    <div class="left">12:00</div>
+                    <div class="right"><i class="fa-solid fa-bell" style="margin-right: 3px;"></i>
+                        <i class="fa-solid fa-signal"></i>
+                    </div>
+                </div>
+            </div>
+            <div id="appContainer" class="app-container">
+                <div class="lockscreen" id="lockScreen">
+                    <div class="content">
+                        <div class="dandt">
+                            <p class="time">19:35</p>
+                            <p class="date">Wednesday 11 August</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="homescreen closed" id="homeScreen">
+                    <div class="apps-grid">
+                        <div class="app green-app">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="app green-app">
+                            <i class="fa-solid fa-messages"></i>
+                        </div>
+                        <div class="app orange-app" onclick="openApp('contactsApp')">
+                            <i class="fas fa-address-book"></i>
+                        </div>
+                        <div class="app blue-app">
+                            <i class="fa-solid fa-"></i>
+                        </div>
+                        <div class="app">
+                            <i class="fa-solid fa-signal"></i>
+                        </div>
+                        <div class="app">
+                            <i class="fa-solid fa-signal"></i>
+                        </div>
+                        <div class="app">
+                            <i class="fa-solid fa-signal"></i>
+                        </div>
+                        <div class="app">
+                            <i class="fa-solid fa-signal"></i>
+                        </div>
+                        <div class="app">
+                            <i class="fa-solid fa-signal"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="contacts closed" id="contactsApp">
+                    <h1>Contacts</h1>
+                    <div class="search">
+                        <input type="text" id="contactsSearch" class="contacts-search" placeholder="Search">
+                    </div>
+                    <div class="contact-list">
+                        <div class="contact-container">
+                            <div class="contact">
+                                <div class="text">
+                                    <p class="contact-name">Jay Daniels</p>
+                                    <p class="contact-number">(281) 123-123</p>
+                                </div>
+                            </div>
+                            <div class="contact-options">
+                                <div class="phone">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div class="message">
+                                    <i class="fa-solid fa-message"></i>
+                                </div>
+                                <div class="edit">
+                                    <i class="fa-solid fa-pencil"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="open-container">
+                <button class="open" id="homeButton"></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
